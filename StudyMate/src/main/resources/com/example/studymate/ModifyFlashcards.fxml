@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F4E5E1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studymate.ModifyFlashcards">
+   <children>
+      <StackPane fx:id="scalingPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="203.0" text="Your Flashcards" textFill="#424b61">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="frontLabel" layoutX="4.0" layoutY="65.0" text="Front of the flashcard:" textFill="#424b61">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="backLabel" layoutX="4.0" layoutY="107.0" text="Back of the flashcard:" textFill="#424b61">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="frontTextLabel" contentDisplay="CENTER" layoutX="165.0" layoutY="51.0" prefHeight="45.0" prefWidth="409.0" textFill="#424b61" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="backTextLabel" layoutX="165.0" layoutY="97.0" prefHeight="37.0" prefWidth="409.0" textFill="#424b61" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="editTextField" layoutX="104.0" layoutY="279.0" prefHeight="26.0" prefWidth="423.0" />
+                        <Label fx:id="editFlashcardLabel" layoutX="4.0" layoutY="283.0" text="Edit Flashcard:" textFill="#424b61">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="noFlashcardsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="134.0" prefHeight="66.0" prefWidth="545.0" textAlignment="CENTER" textFill="#424b61" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="table" layoutX="10.0" layoutY="51.0" prefHeight="283.0" prefWidth="560.0">
+                           <columns>
+                              <TableColumn fx:id="frontColumn" prefWidth="393.0" text="Front" />
+                              <TableColumn fx:id="backColumn" prefWidth="185.0" text="Back" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="editFrontButton" layoutX="204.0" layoutY="212.0" mnemonicParsing="false" onAction="#editEvent" style="-fx-background-color: #637092;" text="Edit Front" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="deleteButton" layoutX="263.0" layoutY="173.0" mnemonicParsing="false" onAction="#deleteButton" style="-fx-background-color: #637092;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editBackButton" layoutX="304.0" layoutY="212.0" mnemonicParsing="false" onAction="#editEvent" style="-fx-background-color: #637092;" text="Edit Back" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="saveButton" layoutX="534.0" layoutY="279.0" mnemonicParsing="false" onAction="#saveButton" style="-fx-background-color: #637092;" text="Save" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="backToTableButton" layoutX="240.0" layoutY="336.0" mnemonicParsing="false" onAction="#backToTableButton" style="-fx-background-color: #637092;" text="Back to Table" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="backToMenuButton" layoutX="240.0" layoutY="355.0" mnemonicParsing="false" onAction="#backToMenuButton" style="-fx-background-color: #637092;" text="Back to Menu" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F4E5E1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studymate.CreateFlashcards">
+   <children>
+      <StackPane fx:id="scalingPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <AnchorPane layoutY="28.0" prefHeight="235.0" prefWidth="327.0">
+                     <children>
+                        <Label layoutX="9.0" layoutY="96.0" text="Input Answer" textFill="#424b61">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label layoutX="9.0" layoutY="61.0" text="Input Question" textFill="#424b61">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <TextField fx:id="questionTextField" layoutX="160.0" layoutY="56.0" promptText="question">
+                           <font>
+                              <Font size="15.0" />
+                           </font></TextField>
+                        <TextField fx:id="answerTextField" layoutX="160.0" layoutY="92.0" promptText="answer">
+                           <font>
+                              <Font size="15.0" />
+                           </font></TextField>
+                        <Button layoutX="43.0" layoutY="176.0" mnemonicParsing="false" onAction="#createFlashcardButton" style="-fx-background-color: #637092;" text="Create Flashcard" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutX="215.0" layoutY="176.0" mnemonicParsing="false" onAction="#doneButton" style="-fx-background-color: #637092;" text="Done" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="46.0" layoutY="-14.0" text="Create Flashcards" textFill="#424b61">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

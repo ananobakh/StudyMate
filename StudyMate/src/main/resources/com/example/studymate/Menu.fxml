@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F4E5E1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studymate.Menu">
+   <children>
+      <StackPane fx:id="scalingPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <AnchorPane layoutY="-17.0">
+                     <children>
+                        <Label layoutX="7.0" text="Menu" textFill="#424b61">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="28.0" layoutY="97.0" mnemonicParsing="false" onAction="#quizButton" style="-fx-background-color: #637092;" text="Quiz" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutX="12.0" layoutY="140.0" mnemonicParsing="false" onAction="#flashcardsButton" style="-fx-background-color: #637092;" text="Flashcards" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutX="6.0" layoutY="220.0" mnemonicParsing="false" onAction="#leaderboardButton" style="-fx-background-color: #637092;" text="LeaderBoard" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutX="2.0" layoutY="181.0" mnemonicParsing="false" onAction="#statisticsButton" style="-fx-background-color: #637092;" text="User Statistics" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+      <Label fx:id="welcomeUserLabel" text="Label" textFill="#424b61" wrapText="true" AnchorPane.rightAnchor="15.5" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="16.5" />
+         </font>
+      </Label>
+      <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logOutButton" style="-fx-background-color: #637092;" text="Log Out" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

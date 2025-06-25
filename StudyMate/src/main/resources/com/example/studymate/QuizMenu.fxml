@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F4E5E1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studymate.QuizMenu">
+   <children>
+      <StackPane fx:id="scalingPane" prefHeight="399.0" prefWidth="600.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <AnchorPane layoutX="202.0" layoutY="23.0" prefHeight="358.0" prefWidth="383.0">
+                     <children>
+                        <Button layoutY="78.0" mnemonicParsing="false" onAction="#flascardsQuizButton" style="-fx-background-color: #637092;" text="Flashcards Quiz" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutY="121.0" mnemonicParsing="false" onAction="#mathQuizButton" style="-fx-background-color: #637092;" text="Math Quiz" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutY="163.0" mnemonicParsing="false" onAction="#englGeoQuizButton" style="-fx-background-color: #637092;" text="Eng/Geo Quiz" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button layoutY="205.0" mnemonicParsing="false" onAction="#comMistQuizButton" style="-fx-background-color: #637092;" text="Common Mistakes Quiz" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <RadioButton fx:id="timerRadioButton" layoutX="207.0" layoutY="137.0" mnemonicParsing="false" text="Timer" textFill="#424b61">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="timeGroup" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="stopWatchRadioButton" layoutX="309.0" layoutY="137.0" mnemonicParsing="false" text="StopWatch" textFill="#424b61" toggleGroup="$timeGroup">
+                           <font>
+                              <Font size="15.0" />
+                           </font></RadioButton>
+                        <CheckBox fx:id="useTimeCheckbox" layoutX="207.0" layoutY="103.0" mnemonicParsing="false" onAction="#useTimeCheckBox" text="Use Time" textFill="#424b61">
+                           <font>
+                              <Font size="15.0" />
+                           </font></CheckBox>
+                        <Label fx:id="selectRadioButtonLabel" layoutX="207.0" layoutY="170.0" textFill="#dd0000">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="122.0" layoutY="-8.0" text="Quiz Menu" textFill="#424b61">
+                           <font>
+                              <Font name="System Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="207.0" layoutY="71.0" text="Choose if you want to use time" textFill="#424b61">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Button fx:id="engToGeobutton" layoutX="251.0" layoutY="262.0" mnemonicParsing="false" onAction="#langQuizType" style="-fx-background-color: #637092;" text="Eng -&gt; Geo" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="geoToEngButton" layoutX="251.0" layoutY="296.0" mnemonicParsing="false" onAction="#langQuizType" style="-fx-background-color: #637092;" text="Geo -&gt; Eng" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="bothLangButton" layoutX="239.0" layoutY="330.0" mnemonicParsing="false" onAction="#langQuizType" style="-fx-background-color: #637092;" text="Both Languages" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Label fx:id="mathQuizParameter" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="206.0" prefHeight="44.0" prefWidth="200.0" textAlignment="CENTER" textFill="#424b61" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Button fx:id="multipleChoiceButton" layoutX="228.0" layoutY="262.0" mnemonicParsing="false" onAction="#mathQuizType" style="-fx-background-color: #637092;" text="Multiple Choice Test" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="openQuestionsButton" layoutX="226.0" layoutY="296.0" mnemonicParsing="false" onAction="#mathQuizType" style="-fx-background-color: #637092;" text="Open Questions Test" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Label fx:id="engGeoQuizParameter" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="206.0" prefHeight="44.0" prefWidth="200.0" textAlignment="CENTER" textFill="#424b61" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets></Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: #637092;" text="Back" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
